@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+
 @Getter
 @Setter
 public class EpisodioDTO {
@@ -21,7 +23,7 @@ public class EpisodioDTO {
     private String episodio;
 
     @JsonProperty("characters")
-    private RotaEpisodioDTO rotaEpisodioDTO;
+    private ArrayList<String> characters;
 
     @JsonProperty("url")
     private String rota;
